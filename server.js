@@ -6,6 +6,27 @@ const jwt = require("jsonwebtoken")
 const app = express();
 const bodyParser = require("body-parser");
 
+const categories = [
+  {
+    title: "Announcents",
+    description: "Info on the latest updates",
+    postnum: 25082,
+    discnum: 70,
+    discussions: {
+      title: "Unreleased ball?",
+      author: "stin",
+      text: "WHERE IS THE UNRELESED BALL I NEED IT",
+      replynum: 3,
+      viewnum: 254,
+      replies: {
+        text: "you are the website you are the website you are the website you are the webste",
+        author: "REVOLVING CAT",
+        
+      }
+    }
+  }
+]
+
 const testUsers = [
   {username: "testuser", email: "test@example.com", password: "password123"},
   {username: "anotheruser", email: "another@example.com", password: "password456"},
